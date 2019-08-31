@@ -14,10 +14,17 @@
   },
   "dependencies": {
     "gatsby": "^2.13.73",
+    "gatsby-background-image": "^0.8.6",
+    "gatsby-image": "^2.2.15",
+    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-source-filesystem": "^2.1.18",
+    "gatsby-transformer-sharp": "^2.2.12",
+    "intersection-observer": "^0.7.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "prettier": "^1.18.2"
   },
   "repository": {

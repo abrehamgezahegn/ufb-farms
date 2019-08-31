@@ -1,0 +1,22 @@
+.container {
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container img {
+	width: 65px;
+	height: 65px;
+	margin-bottom: 20px;
+}
+
+
+.right{
+	margin-left: 24px;
+}
+
+.right p {
+	height: 50px;
+	width: 340px;
+}
