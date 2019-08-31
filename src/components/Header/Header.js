@@ -19,8 +19,6 @@ const Header = () => (
       }
     `}
      render={data => {
-     	console.log(data)
-       // Set ImageData.
        const imageData = data.desktop.childImageSharp.fluid
        return (
         <div className={styles["container"]}>

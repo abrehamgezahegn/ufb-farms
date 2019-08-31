@@ -3,15 +3,24 @@ import Icon from "../Icon/Icon"
 import styles from "./index.module.css";
 
 
-const CardWithIconLeft = ({iconFileName = "" , header="",content="" }) => {
+const CardWithIconLeft = ({iconFileName = "" , header="",rowOne="",rowTwo="" }) => {
 
 	return (
 
 		<div className={styles["container"]}>
-			<Icon iconFileName={iconFileName}/>
+			<div className={styles["iconContainer"]}> 
+				<Icon iconFileName={iconFileName}/> 
+			</div>
 			<div className={styles["right"]}>
-				<h3>{header}</h3>
-				<p>{content}</p>
+				<span className={styles["header"]}> 
+					<h3>{header}</h3> 
+					<span className={styles["tinyIcon"]}>
+						<Icon iconFileName={iconFileName}/>
+					</span> 
+				</span>
+				<p className={styles["desktopParagraph"]}>{rowOne}</p>
+				<p className={styles["desktopParagraph"]}>{rowTwo}</p>
+				<p className={styles["mobileParagraph"]}>{rowOne}{rowTwo}</p>
 			</div>
 		</div>
 

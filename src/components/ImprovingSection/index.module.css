@@ -20,11 +20,18 @@
 }
 
 
-.inner img {
-	width: 280px;
-	height: 340px;
+.theDude {
+	width: 340px;
+	object-fit: contain;
+	margin-bottom: 54px;
 }
 
-.left{
-	margin-right: 300px;
+@media(max-width: 790px){
+	.inner{
+		flex-direction: column-reverse;
+	}
+	.theDude {
+		margin-bottom: 44px;
+		width: 300px;
+	}
 }

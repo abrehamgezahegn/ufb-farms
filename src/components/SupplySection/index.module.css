@@ -21,10 +21,15 @@
 
 
 .inner .image {
-	width: 430px;
-	height: 320px;
+	width: 530px;
+	margin-right: 80px;
+	object-fit: contain;
+	margin-bottom: 44px;
 }
 
-.left{
-	margin-right: 150px;
+@media(max-width: 1060px){
+	.inner .image {
+		width: 90%;
+		margin-right: 0px;
+	}
 }

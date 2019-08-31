@@ -11,10 +11,9 @@ const App =  () => {
  		<Layout>
  			<Header />
  			<ModelSection />
-{/* 			<ImprovingSection />
+ 			<ImprovingSection />
  			<SupplySection />
  			<Footer/>
- 		*/}
  		</Layout>
  	)
 

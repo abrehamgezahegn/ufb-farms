@@ -15,20 +15,26 @@ const ImprovingSection = () => {
 					<CardWithIconLeft 
 						iconFileName="Tag" 
 						header="Transparent Pricing" 
-						content="Building trust with quality driven competitive prices factoring in all associated costs and expenses."
+						rowOne="Building trust with quality driven competitive prices"
+						rowTwo="factoring in all associated costs and expenses."
 					/>
 					<CardWithIconLeft 
 						iconFileName="Wallet" 
 						header="Simple Payment" 
-						content="Direct to bank account. On Time. No installments."
+						rowOne="Direct to bank account. On Time." 
+						rowTwo="No installments."
 					/>
 					<CardWithIconLeft 
 						iconFileName="Loader" 
 						header="Hassle Free" 
-						content="Local logistics support with direct farm sourcing. "
+						rowOne="Local logistics support with"
+						rowTwo= "direct farm sourcing."
 					/>
 				</div>
-				<img src={require("../../../static/Images/thedude.png")} alt="ufb farming"/>
+				<img 
+					className={styles["theDude"]} 
+					src={require("../../../static/Images/thedude.png")} alt="ufb farming"
+				/>
 			</div>
 		</div>
 
