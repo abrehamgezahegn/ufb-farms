@@ -1,8 +1,24 @@
 import React from "react";
+import {useStaticQuery,graphql} from "gatsby"
+import Img from "gatsby-image/withIEPolyfill";
 import styles from "./index.module.css";
 import CardWithIconLeft from "../CardWithIconLeft/CardWithIconLeft"
 
 const SupplySection = () => {
+		const data = useStaticQuery(graphql`
+		query {
+		    fileName: file(relativePath: { eq: "fruits.png" }) {
+		      childImageSharp {
+		        fluid(maxWidth: 650, maxHeight: 420) {
+		          ...GatsbyImageSharpFluid
+		        }
+		      }
+		    }
+		}
+
+	`)
+
+	const imageData = data.fileName.childImageSharp.fluid
 
 	return (
 
@@ -11,7 +27,12 @@ const SupplySection = () => {
 				<h2>Assuring buyers of consistency in supply</h2>	
 			</header>
 			<div className={styles["inner"]}>
-				<img className={styles["image"]}src={require("../../../static/Images/fruits.png")} alt="ufb farming"/>
+				<Img 
+					fluid={imageData} 
+					className={styles["image"]} 
+					alt="ufb farming"
+					objectFit="contain"
+				/>
 				<div className={styles["left"]}> 
 					<CardWithIconLeft 
 						iconFileName="Sale" 

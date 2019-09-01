@@ -30,6 +30,10 @@
 	.inner{
 		flex-direction: column-reverse;
 	}
+	.left{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
 	.theDude {
 		margin-bottom: 44px;
 		width: 300px;

@@ -6,10 +6,17 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `static`, `Images`),
+        path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+          useMozJpeg: false,
+          stripMetadata: true,
+          defaultQuality: 75,
+        },
+    },
     `gatsby-transformer-sharp`,
   ],
 }
