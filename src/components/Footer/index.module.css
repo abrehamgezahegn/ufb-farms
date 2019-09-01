@@ -19,3 +19,9 @@
 	align-items: center;
 	margin: 0px 30px;
 }
+
+@media(max-width: 600px){
+	.inner p{
+		font-size: 14px;
+	}
+}
