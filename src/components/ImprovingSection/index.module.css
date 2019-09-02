@@ -9,8 +9,12 @@
 	width: 100%;
 	text-align: center;
 	margin-bottom: 40px;
+}
+
+.container header h2{
 	margin-right: 30px;
 	margin-left: 30px;
+
 }
 
 .inner {
