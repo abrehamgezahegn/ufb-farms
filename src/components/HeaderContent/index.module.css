@@ -49,10 +49,11 @@
 }
 
 
-@media(max-width: 1000px){
+@media(max-width: 1024px){
 
 	.inner {
 		margin-left: 60px;
+		margin-top: 64px;
 		width: 70%;
 	}
 	.container header{
@@ -83,13 +84,21 @@
 		font-size: 26px;
 		width: 250px;
 		background-color: rgba(255,255,255,0.6);
+		padding-top: 10px;
+		padding-left: 10px;
 
 	}
 
+	.contaner header{
+		padding-top: 10px;
+		padding-left: 10px;
+	}
 	.container h4{
 		font-size: 16px;
 		width: 250px;
 		background-color: rgba(255,255,255,0.6);
+		padding-top: 10px;
+		padding-left: 10px;
 	}
 
 
