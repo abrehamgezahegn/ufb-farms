@@ -7,7 +7,7 @@ import CardWithIconLeft from "../CardWithIconLeft/CardWithIconLeft"
 const SupplySection = () => {
 		const data = useStaticQuery(graphql`
 		query {
-		    fileName: file(relativePath: { eq: "fruits.png" }) {
+		    fileName: file(relativePath: { eq: "fruits.jpg" }) {
 		      childImageSharp {
 		        fluid(maxWidth: 650, maxHeight: 420) {
 		          ...GatsbyImageSharpFluid

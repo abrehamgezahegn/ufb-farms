@@ -8,7 +8,7 @@ const ImprovingSection = () => {
 
 	const data = useStaticQuery(graphql`
 		query {
-		    fileName: file(relativePath: { eq: "thedude.png" }) {
+		    fileName: file(relativePath: { eq: "thedude.jpg" }) {
 		      childImageSharp {
 		        fluid(maxWidth: 500, maxHeight: 550) {
 		          ...GatsbyImageSharpFluid
