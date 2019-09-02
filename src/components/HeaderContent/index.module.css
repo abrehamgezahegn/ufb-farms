@@ -1,13 +1,12 @@
 .container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .inner {
 	width: 100%;
 	max-width: 1250px;
-	margin-top: 56px;
+	margin-top: 124px;
+	margin-left: 150px;
 }
 
 
@@ -16,18 +15,18 @@
 	font-family: Modern Sans;
 	font-size: 48px;
 	line-height: 48px;
-	margin-bottom: 96px;
+	margin-bottom: 124px;
 }
 
 .container h1{
 	color: #0B6E4F;
 	font-size: 48px;
-
 }
 
 .container h4{
 	color: #0B6E4F;
 	font-size: 20px;
+
 }
 
 .container button{
@@ -79,4 +78,19 @@
 		margin-left: 30px;
 		width: 280px;
 	}
+
+	.container h1{
+		font-size: 26px;
+		width: 250px;
+		background-color: rgba(255,255,255,0.6);
+
+	}
+
+	.container h4{
+		font-size: 16px;
+		width: 250px;
+		background-color: rgba(255,255,255,0.6);
+	}
+
+
 }
