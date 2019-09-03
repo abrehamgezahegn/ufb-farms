@@ -1,8 +1,20 @@
 import React from "react";
+import {useStaticQuery,graphql} from "gatsby";
 import sytles from "./index.module.css";
 
-const HeaderContent = ({companyName,headerOne,headerTwo}) => {
+const HeaderContent = () => {
 
+	const headerContent = useStaticQuery(graphql`
+		query {
+			contentfulHeader {
+				companyName
+				headerOne
+				headerTwo
+			}
+		}
+	`)
+
+	const {companyName,headerOne,headerTwo} = headerContent.contentfulHeader;    
 
 	return (
 		<div className={sytles["container"]}>
