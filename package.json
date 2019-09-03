@@ -6,17 +6,19 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "dotenv": "^8.1.0",
     "gatsby": "^2.13.73",
     "gatsby-background-image": "^0.8.6",
     "gatsby-image": "^2.2.15",
     "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-source-contentful": "^2.1.30",
     "gatsby-source-filesystem": "^2.1.18",
     "gatsby-transformer-sharp": "^2.2.12",
     "intersection-observer": "^0.7.0",
