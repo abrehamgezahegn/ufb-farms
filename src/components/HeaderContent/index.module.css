@@ -1,39 +1,42 @@
 .container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .inner {
 	width: 100%;
-	max-width: 1000px;
-	margin-top: 32px;
+	max-width: 1250px;
+	margin-top: 124px;
+	margin-left: 150px;
 }
+
 
 .container header{
 	color: #0E4749;
 	font-family: Modern Sans;
 	font-size: 48px;
 	line-height: 48px;
-	margin-bottom: 44px;
+	margin-bottom: 124px;
 }
 
 .container h1{
 	color: #0B6E4F;
 	font-size: 48px;
-
 }
 
 .container h4{
 	color: #0B6E4F;
 	font-size: 20px;
+
 }
 
 .container button{
-	width: 150px;
 	padding: 15px 25px;
 	color: #fff;
 	background-color: #0B6E4F;
+	font-size: 18px;
+	font-weight: 600;
+	white-space: nowrap;
+	text-align: center;
 }
 
 .contentOne{
@@ -46,10 +49,11 @@
 }
 
 
-@media(max-width: 1000px){
+@media(max-width: 1024px){
 
 	.inner {
 		margin-left: 60px;
+		margin-top: 64px;
 		width: 70%;
 	}
 	.container header{
@@ -73,6 +77,29 @@
 @media(max-width: 460px){
 	.inner {
 		margin-left: 30px;
-		width: 280px
+		width: 280px;
 	}
+
+	.container h1{
+		font-size: 26px;
+		width: 250px;
+		background-color: rgba(255,255,255,0.6);
+		padding-top: 10px;
+		padding-left: 10px;
+
+	}
+
+	.contaner header{
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+	.container h4{
+		font-size: 16px;
+		width: 250px;
+		background-color: rgba(255,255,255,0.6);
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+
 }

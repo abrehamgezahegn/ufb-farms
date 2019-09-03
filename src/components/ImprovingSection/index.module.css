@@ -11,6 +11,12 @@
 	margin-bottom: 40px;
 }
 
+.container header h2{
+	margin-right: 30px;
+	margin-left: 30px;
+
+}
+
 .inner {
 	width: 100%;
 	display: flex;
@@ -29,6 +35,10 @@
 @media(max-width: 790px){
 	.inner{
 		flex-direction: column-reverse;
+	}
+	.left{
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 	.theDude {
 		margin-bottom: 44px;
