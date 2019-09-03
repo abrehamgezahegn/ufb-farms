@@ -21,27 +21,11 @@ const Header = () =>
 
 	`)
 
-const headerContent = useStaticQuery(graphql`
-	query {
-		contentfulHeader {
-			companyName
-			headerOne
-			headerTwo
-		}
-	}
-`)
-
-
 	const imageData = data.fileName.childImageSharp.fixed
-    const {companyName,headerOne,headerTwo} = headerContent.contentfulHeader;    
     return (
        <div className={styles["container"]}>
 	       <div className={styles["inner"]}>
-	              <HeaderContent 
-	                companyName={companyName}
-	                headerOne={headerOne}
-	                headerTwo={headerTwo}
-	              />
+	              <HeaderContent/>
 	              <Img 
 					fluid={imageData} 
 					alt="ufb farming" 
