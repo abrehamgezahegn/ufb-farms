@@ -1,9 +1,23 @@
 import React from "react";
+import {useStaticQuery,graphql} from "gatsby";
 import styles from "./index.module.css";
 import CardWithIconTop from "../CardWithIconTop/CardWithIconTop"
 import Icon from "../Icon/Icon";
 
 const ModelSection = () => {
+
+	const data = useStaticQuery(graphql`
+		query{
+			 allContentfulFirstSection{
+			    nodes{
+			      title
+			      description		     
+		  		}
+  			}
+		} 
+	`)
+
+	const items = data.allContentfulFirstSection.nodes;
 
 	return (
 
@@ -14,24 +28,24 @@ const ModelSection = () => {
 			<div className={styles["cardContainer"]}>
 					<CardWithIconTop 
 						iconFileName="Money" 
-						header="Financing." 
-						content="Farmers receive high-quality solar pumps, seeds and fertilizer on credit, and we offer a flexible repayment system that allows them to pay back their loans in any amount throughout the loan term."
+						header={items[0].title} 
+						content={items[0].description}
 					/>
 					<div className={styles["iconContainer"]}> 
 						<Icon iconFileName="Angle-double-right"/> 
 					</div>
 					<CardWithIconTop 
 						iconFileName="Book-open"
-						header="Traning."
-						content="Farmers receive training throughout the season on modern agricultural techniques."
+						header={items[1].title} 
+						content={items[1].description}
 					/>
 					<div className={styles["iconContainer"]}> 
 						<Icon iconFileName="Angle-double-right"/>
 					 </div>
 					<CardWithIconTop 
 						iconFileName="Sending"
-						header="Distribution."
-						content="We deliver produce directly to vendors shops."
+						header={items[2].title} 
+						content={items[2].description}
 					/>
 			</div>
 		</div>
