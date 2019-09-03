@@ -1,0 +1,51 @@
+.container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.container header{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.container header h1{
+	text-align: center;
+	font-size: 48px;
+}
+
+.cardContainer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.iconContainer{
+	height: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.iconContainer img{
+	margin-bottom: 24px;
+}
+
+
+@media(max-width: 790px){
+	.cardContainer{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.iconContainer {
+		height: 150px;
+	}
+	.iconContainer img{
+		transform: rotate(90deg);
+	}
+
+
+}

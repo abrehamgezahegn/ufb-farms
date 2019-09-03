@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+.layout {
+	width: 100%;
+	height: auto;
+}
+
+
+body {
+	margin: 0px;
+	height: 100%;
+	font-family: Lora;
+}
+
+
+p {
+	font-size:  18px;
+	line-height: 26px;
+	margin: 5px 0px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+}
+
+button{
+	border: none;
+	outline: none;
+}
+
+header{
+	margin-right: 0px;
+}
