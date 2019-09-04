@@ -19,7 +19,7 @@ const HeaderContent = () => {
 	return (
 		<div className={sytles["container"]}>
 			<div className={sytles["inner"]}>
-				<header>{companyName}</header>
+				<h1 className={sytles["header"]}>{companyName}</h1>
 				<div className={sytles["contentOne"]}>
 					<h1>{headerOne}</h1>
 				</div>

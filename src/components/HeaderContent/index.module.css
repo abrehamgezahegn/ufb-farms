@@ -18,15 +18,15 @@
 }
 
 
-.container header{
+.container .header{
 	font-family: Evogria Roboto;
 	font-size: 48px;
 	line-height: 48px;
 	margin-bottom: 124px;
-	width: 250px;
 	border-bottom: solid 6px #0B6E4F;
 	border-top: solid 6px #0B6E4F;
 	font-weight: 900;
+	width: 280px;
 }
 
 
@@ -69,8 +69,18 @@
 	.container button{
 		display: none;
 	}
-	.container header {
+	.container .header {
 		text-align: center;
 		margin-bottom: 75px;
+		font-size: 42px;
+		width: 260px;
+	}
+
+	.contentOne h1{
+		font-size: 36px;
+	}
+
+	.container h4{
+		font-size: 18px;
 	}
 }
