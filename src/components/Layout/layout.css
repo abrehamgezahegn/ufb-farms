@@ -17,6 +17,7 @@ p {
 	font-size:  18px;
 	line-height: 26px;
 	margin: 5px 0px;
+	font-family: source;
 }
 
 
@@ -28,6 +29,7 @@ button{
 	border: none;
 	outline: none;
 	font-family: Lora;
+	cursor: pointer;
 
 }
 

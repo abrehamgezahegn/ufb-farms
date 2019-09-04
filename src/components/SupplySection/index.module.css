@@ -5,10 +5,11 @@
 	margin-bottom: 100px;
 }
 
-.container header {
+.container header h2 {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 40px;
+	font-size: 36px;
 }
 
 .inner {
@@ -31,5 +32,11 @@
 	.inner .image {
 		width: 90%;
 		margin-right: 0px;
+	}
+}
+
+@media(max-width: 850px){
+	.container header h2 {
+		font-size: 28px;
 	}
 }

@@ -45,7 +45,7 @@
 	}
 
 	.iconContainer {
-		height: 150px;
+		height: 100px;
 	}
 	.iconContainer img{
 		transform: rotate(90deg);
