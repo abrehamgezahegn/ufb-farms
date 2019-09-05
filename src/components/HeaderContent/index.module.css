@@ -47,8 +47,9 @@
 }
 
 
-.contentTwo{
+.contentTwo h4{
 	margin-bottom: 112px;
+	font-weight: 400;
 }
 
 @media(max-width: 850px){
