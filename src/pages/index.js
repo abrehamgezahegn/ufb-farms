@@ -5,10 +5,14 @@ import ModelSection from "../components/ModelSection/ModelSection"
 import ImprovingSection from "../components/ImprovingSection/ImprovingSection"
 import SupplySection from "../components/SupplySection/SupplySection";
 import Footer from "../components/Footer/Footer";
+import Seo from "../components/Seo/Seo"
+
+
 
 const App =  () => {
  return (
  		<Layout>
+ 			<Seo />
  			<Header />
  			<ModelSection />
  			<ImprovingSection />

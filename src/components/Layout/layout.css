@@ -36,3 +36,12 @@ button{
 header{
 	margin-right: 0px;
 }
+
+a, a:hover, a:visited , a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
