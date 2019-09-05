@@ -6,7 +6,9 @@ const Footer = () =>(
 	 <footer className={styles["footer"]}> 
 	 	<div className={styles["inner"]}> 
 	 		<p> © 2019 UFB Farms </p>  
-	 		<p>Contact Us</p>
+	 		<a target="_blank" href=" https://docs.google.com/forms/d/e/1FAIpQLSfxV2uRCTyCuoJ_flPjZGad0McmDhDwjbdWDFEQ1X9-IIbTeg/viewform?usp=sf_link">
+	 			<p>Contact Us</p>
+	 		</a>
 	 	</div>
 	 </footer>
 )
