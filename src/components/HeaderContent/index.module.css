@@ -18,21 +18,12 @@
 }
 
 
-.container .header{
-	font-family: Evogria Roboto;
-	font-size: 48px;
-	line-height: 48px;
-	margin-bottom: 124px;
-	border-bottom: solid 6px #0B6E4F;
-	border-top: solid 6px #0B6E4F;
-	font-weight: 900;
-	width: 280px;
+.logo{
+	width: 240px;
+	height: 100px;
+	margin-bottom: 124px ;
 }
 
-
-.container h1{
-	font-size: 48px;
-}
 
 .container h4{
 	font-size: 20px;
@@ -52,11 +43,12 @@
 
 .contentOne{
 	margin-bottom: 28px;
+	line-height: 43px;
 }
 
 
 .contentTwo{
-	margin-bottom: 36px;
+	margin-bottom: 112px;
 }
 
 @media(max-width: 850px){
@@ -65,6 +57,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		max-height: 350px;
 	}
 	.container button{
 		display: none;
@@ -78,9 +71,28 @@
 
 	.contentOne h1{
 		font-size: 36px;
+		line-height: 32px;
 	}
 
 	.container h4{
 		font-size: 18px;
 	}
+
+	.logo{
+		width: 200px;
+		height: 80px;
+		margin-bottom: 72px;
+	}
+}
+
+@media(max-width: 550px){
+	.contentOne h1{
+		font-size: 28px;
+	}
+	.logo{
+		width: 180px;
+		height: 64px;
+		margin-bottom: 64px;
+	}
+
 }

@@ -7,26 +7,27 @@ const HeaderContent = () => {
 	const headerContent = useStaticQuery(graphql`
 		query {
 			contentfulHeader {
-				companyName
 				headerOne
 				headerTwo
 			}
 		}
 	`)
 
-	const {companyName,headerOne,headerTwo} = headerContent.contentfulHeader;    
+	const {headerOne,headerTwo} = headerContent.contentfulHeader;    
 
 	return (
 		<div className={sytles["container"]}>
 			<div className={sytles["inner"]}>
-				<h1 className={sytles["header"]}>{companyName}</h1>
+				<img className={sytles["logo"]} src={require('../../../static/Icons/logo.svg')} alt="ufb farms"/>
 				<div className={sytles["contentOne"]}>
 					<h1>{headerOne}</h1>
 				</div>
 				<div className={sytles["contentTwo"]}> 
 					<h4>{headerTwo}</h4>
 				</div>
-				<button>CONTACT US</button>
+				<a target="_blank" href=" https://docs.google.com/forms/d/e/1FAIpQLSfxV2uRCTyCuoJ_flPjZGad0McmDhDwjbdWDFEQ1X9-IIbTeg/viewform?usp=sf_link">
+					<button>Contact Us</button>
+				</a>
 			</div>
 		</div>	
 	)

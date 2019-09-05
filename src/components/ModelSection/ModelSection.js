@@ -23,18 +23,19 @@ const ModelSection = () => {
 						<Icon iconFileName="Angle-double-right"/> 
 					</div>
 					<CardWithIconTop 
-						iconFileName="Book-open"
-						header={data.firstSectionItems[1].title} 
-						content={data.firstSectionItems[1].description}
-					/>
-					<div className={styles["iconContainer"]}> 
-						<Icon iconFileName="Angle-double-right"/>
-					 </div>
-					<CardWithIconTop 
 						iconFileName="Sending"
 						header={data.firstSectionItems[2].title} 
 						content={data.firstSectionItems[2].description}
 					/>
+					<div className={styles["iconContainer"]}> 
+						<Icon iconFileName="Angle-double-right"/>
+					 </div>
+					 <CardWithIconTop 
+						iconFileName="Book-open"
+						header={data.firstSectionItems[1].title} 
+						content={data.firstSectionItems[1].description}
+					/>
+
 			</div>
 		</div>
 

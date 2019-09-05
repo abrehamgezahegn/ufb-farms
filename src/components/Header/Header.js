@@ -31,7 +31,9 @@ const Header = () =>
 					alt="ufb farming" 
 					className={styles["image"]} 
 				  />
-				  <button className={styles["button"]}>CONTACT US</button>
+				  <a target="_blank" href=" https://docs.google.com/forms/d/e/1FAIpQLSfxV2uRCTyCuoJ_flPjZGad0McmDhDwjbdWDFEQ1X9-IIbTeg/viewform?usp=sf_link">
+					<button className={styles["button"]}>Contact Us</button>
+				</a>
 			</div>
         </div>
       )
