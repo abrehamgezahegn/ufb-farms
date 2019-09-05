@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 
 .layout {
 	width: 100%;
@@ -17,12 +19,13 @@ p {
 	font-size:  18px;
 	line-height: 26px;
 	margin: 5px 0px;
-	font-family: source;
+	font-family: Source Sans Pro;
 }
 
 
 h1,h2,h3,h4,h5,h6{
 	margin: 0px;
+	font-weight: 800;
 }
 
 button{
