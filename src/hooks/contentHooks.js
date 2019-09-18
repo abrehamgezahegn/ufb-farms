@@ -5,7 +5,7 @@ export const useFirstSection = () => {
 	
 	const data = useStaticQuery(graphql`
 		query{
-			 allContentfulFirstSection{
+			 allContentfulFirstSection(sort: {fields : [createdAt] , order:ASC}){
 			    nodes{
 			      title
 			      description		     
